@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Oroban-Elegans";
+  src: url("https://github.com/ya1sec/hapworth/tree/master/fonts/Oroban-Elegans.ttf");
+  src:
+    url("https://github.com/ya1sec/hapworth/tree/master/fonts/Oroban-Elegans.woff") format("woff"),
+    url("https://github.com/ya1sec/hapworth/tree/master/fonts/Oroban-Elegans.woff2") format("woff2"),
+    url("https://github.com/ya1sec/hapworth/tree/master/fonts/Oroban-Elegans.otf") format("opentype"),
+}
+
+@font-face {
+  font-family: "Oroban-ElegansItalic";
+  src: url("https://hapworth.studio/fonts/Oroban-ElegansItalic.otf");
+  src:
+    url("https://hapworth.studio/fonts/Oroban-ElegansItalic.woff") format("woff"),
+    url("https://hapworth.studio/fonts/Oroban-ElegansItalic.woff2") format("woff"),
+    url("https://hapworth.studio/fonts/Oroban-ElegansItalic.otf") format("opentype"),
+    url("https://hapworth.studio/fonts/Oroban-ElegansItalic.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Inferi-Light";
+  src: url("https://hapworth.studio/fonts/Inferi-Light.otf");
+  src:
+    url("https://hapworth.studio/fonts/Inferi-Light.woff") format("woff"),
+    url("https://hapworth.studio/fonts/Inferi-Light.otf") format("opentype"),
+    url("https://hapworth.studio/fonts/Inferi-Light.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Inferi-LightItalic";
+  src: url("https://hapworth.studio/fonts/Inferi-LightItalic.otf");
+  src:
+    url("https://hapworth.studio/fonts/Inferi-LightItalic.woff") format("woff"),
+    url("https://hapworth.studio/fonts/Inferi-LightItalic.woff2") format("woff2"),
+    url("https://hapworth.studio/fonts/Inferi-Light.ttf") format("truetype") url("https://hapworth.studio/fonts/Inferi-LightItalic.otf") format("opentype"),
+}
+
+body {
+  background-color: #ffffff;
+}
+
+img {
+  width: auto;
+  max-width: 400px;
+  margin: 0px;
+  border: none;
+  padding: 10px;
+}
+
+h1 {
+  font-family: Oroban-Elegans;
+  position: fixed;
+}
+
+h2 {
+  font-family: Inferi-LightItalic;
+  font-size: 12px;
+}
+
+div {
+  position: relative;
+}
+
+#videoBG {
+  position: fixed;
+  z-index: -1;
+  left: -.5px;
+  top: -1px;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #videoBG {
+    display: none;
+  }
+
+  body {
+    background: url("img/videoload.jpg");
+    background-size: cover;
+  }
+}
+
+#content-container {
+  display: block;
+  position: inherit;
+  margin: inherit;
+  max-width: 300px;
+  color: white;
+}
+
+#content {
+  display: block;
+  max-width: 400px;
+  position: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  width: auto;
+  padding: 10px;
+}
+
+#image {
+  display: flex;
+  position: fixed;
+  top: 10px;
+  width: 200px;
+}
+
+#descriptive-text {
+  display: block;
+  position: inherit;
+  margin: auto;
+  max-width: inherit;
+  height: 100px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+#descriptive-head {
+  display: block;
+  position: inherit;
+  margin: auto;
+  width: 500px;
+  height: inherit;
+  text-align: justify;
+  color: white;
+}
+
+#submissions {
+  display: block;
+  position: inherit;
+  margin: auto;
+  width: auto;
+  line-height: 15px;
+  color: white;
+}
+
+#email {
+  display: block;
+  position: fixed;
+  margin: auto;
+  width: auto;
+  height: 100px;
+  color: white;
+}
+
+#mailbox {
+  display: block;
+  position: inherit;
+  margin: auto;
+  width: auto;
+  line-height: 15px;
+  color: white;
+}
+
+#footer {
+  display: block;
+  bottom: 20px;
+  left: 20px;
+  position: fixed;
+  margin: auto;
+  height: inherit;
+  text-align: center;
+  color: white;
+}
+
+#videolink {
+  display: block;
+  bottom: 20px;
+  left: 20px;
+  position: fixed;
+  margin: auto;
+  height: inherit;
+  text-align: center;
+  color: white;
+}
+
+
+#spinner {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  font-family: Oroban-Elegans;
+  font-size: 90px;
+  text-align: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes depth {
+  0 {
+    text-shadow: 0 0 black;
+  }
+
+  25% {
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+  }
+
+  50% {
+    text-shadow: 0 0 black;
+  }
+
+  75% {
+    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
+  }
+
+  100% {
+    text-shadow: 0 0 black;
+  }
+}
+
+.hapworthfont {
+  font-family: Oroban-Elegans;
+  font-size: 20px;
+  text-align: center;
+}
+
+.font2 {
+  font-family: helvetica;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.font3 {
+  font-family: Inferi-LightItalic;
+  font-size: 12px;
+}
+
+.font4 {
+  font-family: helvetica;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.font5 {
+  font-family: Oroban-Elegans;
+  font-size: 30px;
+}
+
+.font6 {
+  font-family: Inferi-Lightitalic;
+  font-size: 20px;
+}
+
+.foot {
+  font-family: Inferi-Light;
+  font-size: 12px;
+}
+
+p {
+  font-family: Inferi-Light;
+  font-size: 12px;
+}
