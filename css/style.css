@@ -93,7 +93,8 @@ div {
 
   @media screen and (max-device-width: 640px){
     #content {
-      max-width: 50px
+      max-width: auto;
+
     }
   }
 
