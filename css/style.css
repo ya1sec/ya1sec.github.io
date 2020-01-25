@@ -91,6 +91,7 @@ div {
   }
 
 
+
   body {
     background: url("img/videoload.jpg");
     background-size: cover;
@@ -120,6 +121,7 @@ div {
   display: block;
   position: inherit;
   max-width: 500px;
+  max-height: auto;
   position: inherit;
   margin-left: auto;
   margin-right: auto;
@@ -197,7 +199,6 @@ div {
 }
 
 #nav {
-  display: block;
   top: auto;
   left: 20px;
   position: fixed;
