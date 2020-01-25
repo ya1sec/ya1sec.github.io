@@ -91,23 +91,14 @@ div {
   }
   }
 
-  @media screen and (max-width: 760px){
+/*  @media screen and (max-width: 760px){
     body {
+      display: flex;
       max-width: 200px;
 
     }
   }
-
-  @media (max-width: 640px){
-    #content {
-      max-width: auto;
-      display: block;
-      position: inherit;
-      margin: auto;
-      height: inherit;
-
-    }
-  }
+*/
 
 
   @media screen and (max-device-width: 640px){
