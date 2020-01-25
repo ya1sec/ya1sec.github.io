@@ -89,6 +89,19 @@ div {
   #videoBG {
     display: none;
   }
+  }
+
+  @media screen and (max-device-width: 640px){
+    #content {
+      max-width: 200px
+    }
+  }
+
+  @media screen and (max-device-width: 640px){
+    #videocontent {
+      max-width: 200px
+    }
+  }
 
 
 
