@@ -124,7 +124,7 @@ div {
 }
 
 #content {
-  display: block;
+  display: flex;
   max-width: 400px;
   position: inherit;
   margin-left: auto;
