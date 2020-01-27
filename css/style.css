@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: "Oroban-Elegans";
   src: url("https://github.com/ya1sec/hapworth/tree/master/fonts/Oroban-Elegans.ttf");
   src:
@@ -34,6 +34,7 @@
     url("https://hapworth.studio/fonts/Inferi-LightItalic.woff2") format("woff2"),
     url("https://hapworth.studio/fonts/Inferi-Light.ttf") format("truetype") url("https://hapworth.studio/fonts/Inferi-LightItalic.otf") format("opentype"),
 }
+*/
 
 body {
   background-color: #ffffff;
@@ -47,15 +48,6 @@ img {
   padding: 10px;
 }
 
-h1 {
-  font-family: Oroban-Elegans;
-  position: fixed;
-}
-
-h2 {
-  font-family: Inferi-LightItalic;
-  font-size: 12px;
-}
 
 div {
   position: relative;
@@ -108,11 +100,6 @@ div {
 
 
 
-  body {
-    background: url("img/videoload.jpg");
-    background-size: cover;
-  }
-}
 
 #content-container {
   display: block;
@@ -153,36 +140,7 @@ div {
   width: 200px;
 }
 
-#descriptive-text {
-  display: block;
-  position: inherit;
-  margin: auto;
-  max-width: inherit;
-  height: 100px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-}
 
-#descriptive-head {
-  display: block;
-  position: inherit;
-  margin: auto;
-  width: 500px;
-  height: inherit;
-  text-align: justify;
-  color: white;
-}
-
-#submissions {
-  display: block;
-  position: inherit;
-  margin: auto;
-  width: auto;
-  line-height: 15px;
-  color: white;
-}
 
 #email {
   display: block;
@@ -242,7 +200,7 @@ div {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 3s;
-  font-family: Oroban-Elegans;
+  font-family: "Times New Roman", Times, serif;
   font-size: 90px;
   text-align: center;
 }
@@ -284,11 +242,6 @@ div {
   }
 }
 
-.hapworthfont {
-  font-family: Oroban-Elegans;
-  font-size: 20px;
-  text-align: center;
-}
 
 .font2 {
   font-family: helvetica;
@@ -297,7 +250,7 @@ div {
 }
 
 .font3 {
-  font-family: Inferi-LightItalic;
+  font-family: "Times New Roman", Times, serif;
   font-size: 12px;
 }
 
@@ -308,21 +261,12 @@ div {
 }
 
 .font5 {
-  font-family: Oroban-Elegans;
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
 }
 
-.font6 {
-  font-family: Inferi-Lightitalic;
-  font-size: 20px;
-}
-
-.foot {
-  font-family: Inferi-Light;
-  font-size: 12px;
-}
 
 p {
-  font-family: Inferi-Light;
+  font-family: "Times New Roman", Times, serif;
   font-size: 12px;
 }
