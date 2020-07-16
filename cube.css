@@ -1,0 +1,103 @@
+body {
+  perspective: 1300px;
+  height: 80vh;
+  max-height: 80vh;
+  background-image: url(img/ladytrain2.jpg);
+  background-size: 100px auto;
+  font-family: "Inferi";
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+
+  transform: rotateX(20deg) rotateY(30deg);
+}
+
+#ankit {
+  font-family: "Inferi";
+  font-style: italic;
+  font-size: 3em;
+  color: rgb(255, 0, 0);
+}
+
+#video {
+  font-family: "Inferi";
+  font-style: italic;
+  font-size: 3em;
+  color: rgb(255, 0, 0);
+}
+
+#still {
+  font-family: "Inferi";
+  font-style: italic;
+  font-size: 3em;
+  color: rgb(255, 0, 0);
+}
+
+#web {
+  font-family: "Inferi";
+  font-style: italic;
+  font-size: 3em;
+  color: rgb(255, 0, 0);
+}
+
+#about {
+  font-family: "Inferi";
+  font-style: italic;
+  font-size: 3em;
+  color: rgb(255, 0, 0);
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.face-cover {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/kimshui.gif);
+  transform: translateX(-50%) translateY(-50%) translateZ(250px);
+}
+
+.face-side {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/nakedsculptures_1.gif);
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(250px);
+}
+
+.face-spine {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/fromback.gif);
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(250px);
+}
+
+.face-top {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/cirque.gif);
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(250px);
+}
+
+.face-bottom {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/left.gif);
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(250px);
+}
+
+.face-back {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/themepark.gif);
+  transform: translateX(-50%) translateY(-50%) rotateX(180deg) translateZ(250px);
+}

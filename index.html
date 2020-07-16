@@ -1,105 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Ankit Bagchi</title>
 
-  <title>Ankit Bagchi</title>
+    <style type="text/css"></style>
+    <video id="videoBG" poster="img/videoload.jpg" autoplay muted loop>
+      <source src="img/video.mp4" type="video/mp4" />
+    </video>
+  </head>
+  <header>
+    <a style="color: #ff0000;" class="font5" href="video.html">VIDEO</a>
+    <p id="spinner" style="position: fixed; color: #ffffff;">*</p>
+  </header>
 
-  <style type="text/css">
-    /* body{
-  background-image: url("img/bg.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-clip: border-box;
-  background-origin: border-box;
+  <body>
+    <img id="content" src="img/walking.png" />
+    <img id="content" src="img/bell.png" />
+    <img id="content" src="img/news.png" />
+    <img id="content" src="img/lol.png" />
+    <img id="content" src="img/lamp.png" />
+    <img id="content" src="img/couple.png" />
+    <img id="content" src="img/house.png" />
+    <img id="content" src="img/tv.png" />
+    <img id="content" src="img/body.png" />
+    <img id="content" src="img/back.png" />
+    <img id="content" src="img/16.png" />
+    <img id="content" src="img/12.png" />
+    <img id="content" src="img/4.png" />
+    <img id="content" src="img/basketball.jpg" />
+    <img id="content" src="img/horse.png" />
+    <img id="content" src="img/tc1.png" />
+    <img id="content" src="img/street.jpg" />
+    <img id="content" src="img/dog.jpg" />
+    <img id="content" src="img/sarah.jpg" />
+    <img id="content" src="img/neck.jpg" />
+    <img id="content" src="img/ladytrain2.jpg" />
+    <img id="content" src="img/ladytrain.jpg" />
+    <img id="content" src="img/face3.jpg" />
+    <img id="content" src="img/face2.jpg" />
+    <img id="content" src="img/face1.jpg" />
+    <img id="content" src="img/face6.jpg" />
+    <img id="content" src="img/face7.jpg" />
 
-  } */
-  /*  @font-face {
-      font-family: "Oroban-Elegans";
-      src: url("fonts/Oroban-Elegans.ttf");
-      src:
-        url("fonts/Oroban-Elegans.woff") format("woff"),
-        url("fonts/Oroban-Elegans.woff2") format("woff2"),
-        url("fonts/Oroban-Elegans.otf") format("opentype"),
-    }
-
-    @font-face {
-      font-family: "Oroban-ElegansItalic";
-      src: url("fonts/Oroban-ElegansItalic.otf");
-      src:
-        url("fonts/Oroban-ElegansItalic.woff") format("woff"),
-        url("fonts/Oroban-ElegansItalic.woff2") format("woff"),
-        url("fonts/Oroban-ElegansItalic.otf") format("opentype"),
-        url("fonts/Oroban-ElegansItalic.ttf") format("truetype"),
-
-    }
-
-    @font-face {
-      font-family: "Inferi-Light";
-      src: url("fonts/Inferi-Light.otf");
-      src:
-        url("fonts/Inferi-Light.woff") format("woff"),
-        url("fonts/Inferi-Light.otf") format("opentype"),
-        url("fonts/Inferi-Light.ttf") format("truetype"),
-
-    }
-
-    @font-face {
-      font-family: "Inferi-LightItalic";
-      src: url("fonts/Inferi-LightItalic.otf");
-      src:
-        url("fonts/Inferi-LightItalic.woff") format("woff"),
-        url("fonts/Inferi-LightItalic.woff2") format("woff2"),
-        url("fonts/Inferi-Light.ttf") format("truetype") url("fonts/Inferi-LightItalic.otf") format("opentype"),
-    }
-    */
-  </style>
-  <video id="videoBG" poster="img/videoload.jpg" autoplay muted loop>
-    <source src="img/video.mp4" type="video/mp4">
-  </video>
-</head>
-<header>
-    <a style="color:#ff0000;" class="font5" href="video.html">VIDEO</a>
-    <p id="spinner" style="position: fixed; color:#ffffff">*</p>
-
-</header>
-
-<body>
-    <img id="content" src="img/walking.png">
-    <img id="content" src="img/bell.png">
-    <img id="content" src="img/news.png">
-    <img id="content" src="img/lol.png">
-    <img id="content" src="img/lamp.png">
-    <img id="content" src="img/couple.png">
-    <img id="content" src="img/house.png">
-    <img id="content" src="img/tv.png">
-    <img id="content" src="img/body.png">
-    <img id="content" src="img/back.png">
-    <img id="content" src="img/16.png">
-    <img id="content" src="img/12.png">
-    <img id="content" src="img/4.png">
-    <img id="content" src="img/basketball.jpg">
-    <img id="content" src="img/horse.png">
-    <img id="content" src="img/tc1.png">
-    <img id="content" src="img/street.jpg">
-    <img id="content" src="img/dog.jpg">
-    <img id="content" src="img/sarah.jpg">
-    <img id="content" src="img/neck.jpg">
-    <img id="content" src="img/ladytrain2.jpg">
-    <img id="content" src="img/ladytrain.jpg">
-    <img id="content" src="img/face3.jpg">
-    <img id="content" src="img/face2.jpg">
-    <img id="content" src="img/face1.jpg">
-    <img id="content" src="img/face6.jpg">
-    <img id="content" src="img/face7.jpg">
-
-<footer>
-  <a href="mailto:theankitbagchi@gmail.com" style="color:#ff0000;" class="font3"><i>theankitbagchi@gmail.com</i></a>
-</footer>
-
-</body>
-
+    <footer>
+      <a
+        href="mailto:theankitbagchi@gmail.com"
+        style="color: #ff0000;"
+        class="font3"
+        ><i>theankitbagchi@gmail.com</i></a
+      >
+    </footer>
+  </body>
 </html>
