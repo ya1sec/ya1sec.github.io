@@ -1,20 +1,52 @@
 body {
   background-color: #ffffff;
+  font-family: "Inferi";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 img {
-  width: auto;
-  max-width: 400px;
+  width: 300px;
+  max-width: auto;
   margin: 0px;
   border: none;
   padding: 10px;
 }
 
-div {
-  position: relative;
+a {
+  font-family: "Inferi";
+  font-size: 1em;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  color: rgb(0, 17, 255);
 }
 
-#videoBG {
+
+#content-container {
+  display: block;
+  position: inherit;
+  margin: inherit;
+  max-width: 300px;
+  color: white;
+}
+
+#content {
+  display: flex;
+  position: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  padding: 10px;
+}
+
+
+/* div {
+  position: relative;
+} */
+
+ #videoBG {
   position: fixed;
   z-index: -1;
   left: -0.5px;
@@ -47,23 +79,7 @@ div {
 }
 
 
-#content-container {
-  display: block;
-  position: inherit;
-  margin: inherit;
-  max-width: 300px;
-  color: white;
-}
 
-#content {
-  display: flex;
-  position: inherit;
-  margin-left: auto;
-  margin-right: auto;
-  margin: auto;
-  width: auto;
-  padding: 10px;
-}
 
 #videocontent {
   display: block;
@@ -78,12 +94,6 @@ div {
   padding: 10px;
 }
 
-#image {
-  display: flex;
-  position: fixed;
-  top: 10px;
-  width: 200px;
-}
 
 #email {
   display: block;
@@ -115,14 +125,7 @@ div {
 }
 
 #nav {
-  top: auto;
-  left: 20px;
   position: fixed;
-  margin: auto;
-  height: inherit;
-  text-align: center;
-  font-family: Oroban-Elegans;
-  font-size: 30px;
 }
 
 #videolink {
@@ -136,19 +139,13 @@ div {
   color: white;
 }
 
+
+
 #spinner {
   animation-name: spin, depth;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 3s;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 90px;
-  text-align: center;
-}
-
-.fixed a {
-  display: block;
-  position: fixed;
 }
 
 @keyframes spin {
@@ -184,7 +181,7 @@ div {
   }
 }
 
-.font2 {
+/* .font2 {
   font-family: helvetica;
   font-size: 15px;
   font-weight: 600;
@@ -209,4 +206,4 @@ div {
 p {
   font-family: "Times New Roman", Times, serif;
   font-size: 12px;
-}
+} */

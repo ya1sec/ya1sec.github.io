@@ -1,0 +1,281 @@
+body {
+  perspective: 1500px;
+  height: 100vh;
+  /* max-height: 100vh; */
+  /* background-image: url(img/plaid.jpg);
+  background-size: 100px auto; */
+  font-family: "Inferi";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+
+  transform: rotateX(20deg) rotateY(30deg);
+}
+
+a {
+  font-family: "Inferi";
+  font-size: 1em;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  color: rgb(0, 17, 255);
+}
+
+p {
+  font-family: "Inferi";
+  font-size: 1em;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+p:hover {
+  color: hotpink;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+.info-container {
+  max-width: 600px;
+  font-family: "Inferi";
+  font-size: 1em;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.logo {
+  color: rgb(0, 17, 255);
+}
+
+#ankit {
+  font-family: "Inferi";
+  font-size: 5em;
+  color: rgb(255, 0, 0);
+}
+
+#video {
+  font-family: "Inferi";
+  font-size: 5em;
+  color: rgb(255, 0, 0);
+}
+
+#still {
+  font-family: "Inferi";
+  font-size: 5em;
+  color: rgb(255, 0, 0);
+}
+
+#web {
+  font-family: "Inferi";
+  font-size: 5em;
+  color: rgb(255, 0, 0);
+}
+
+#about {
+  font-family: "Inferi";
+  font-size: 5em;
+  color: rgb(255, 0, 0);
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.face-cover {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/kimshui.gif);
+  transform: translateX(-50%) translateY(-50%) translateZ(150px);
+}
+
+.face-side {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/nakedsculptures_1.gif);
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(150px);
+}
+
+.face-spine {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/fromback.gif);
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(150px);
+}
+
+.face-top {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/cirque.gif);
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(150px);
+}
+
+.face-bottom {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/wonhundred1.gif);
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(150px);
+}
+
+.face-back {
+  width: 300px;
+  height: 300px;
+  background-image: url(gif/themepark.gif);
+  transform: translateX(-50%) translateY(-50%) rotateX(180deg) translateZ(150px);
+}
+
+#bottom-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
+
+#spinner {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes depth {
+  0 {
+    text-shadow: 0 0 black;
+  }
+
+  25% {
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+  }
+
+  50% {
+    text-shadow: 0 0 black;
+  }
+
+  75% {
+    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+      -5px 0 black;
+  }
+
+  100% {
+    text-shadow: 0 0 black;
+  }
+}
+
+.spinner-2 {
+  animation: spin2 10s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 40em) {
+  body {
+    height: 95vh;
+  }
+
+  .info-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 600px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 0.95em;
+  }
+
+  section {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+
+    transform: rotateX(20deg) rotateY(30deg);
+  }
+
+  .face-cover {
+    width: 150px;
+    height: 150px;
+    background-image: url(gif/kimshui.gif);
+    transform: translateX(-50%) translateY(-50%) translateZ(75px);
+  }
+
+  .face-side {
+    width: 150px;
+    height: 150px;
+    background-image: url(gif/nakedsculptures_1.gif);
+    transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(75px);
+  }
+
+  .face-spine {
+    width: 150px;
+    height: 150px;
+    background-image: url(gif/fromback.gif);
+    transform: translateX(-50%) translateY(-50%) rotateY(-90deg)
+      translateZ(75px);
+  }
+
+  .face-top {
+    width: 150px;
+    height: 150px;
+    background-image: url(gif/cirque.gif);
+    transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(75px);
+  }
+
+  .face-bottom {
+    width: 150px;
+    height: 150px;
+    background-image: url(gif/wonhundred1.gif);
+    transform: translateX(-50%) translateY(-50%) rotateX(-90deg)
+      translateZ(75px);
+  }
+
+  .face-back {
+    width: 150px;
+    height: 150px;
+    background-image: url(gif/themepark.gif);
+    transform: translateX(-50%) translateY(-50%) rotateX(180deg)
+      translateZ(75px);
+  }
+}

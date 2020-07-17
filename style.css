@@ -1,0 +1,131 @@
+/* sets min height to 100% to ensure footer stays at bottom */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0;
+  background-color: black !important;
+  font-family: "Inferi-Light";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  padding: 20px;
+  left: 0;
+  bottom: 0 !important;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  color: #ff510d;
+  text-align: center;
+}
+
+h3 {
+  color: #ff26db;
+}
+
+label {
+  color: white;
+}
+
+p.green {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.container {
+  /* margin - bottom = footer height */
+  margin-bottom: 80px;
+}
+.white {
+  color: white;
+}
+.pink {
+  color: #ff26db;
+}
+
+.green {
+  color: #1dff7b;
+}
+
+.yellow {
+  color: #fff23c;
+}
+
+.navbar .navbar-brand :hover {
+  color: rgb(29, 255, 123);
+}
+
+/* following navbar styles are nulled because of navbar-dark bootstrap class */
+.navbar a.nav-link:hover {
+  color: #fff23c;
+}
+
+.navbar .navbar-brand {
+  color: #ff26db;
+}
+
+.navbar .navbar-nav .nav-item .nav-link :hover {
+  color: #fff23c;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-nav {
+  color: yellow;
+}
+
+.nav {
+  text-decoration: white;
+}
+
+.navbar .navbar-expand-md {
+  color: white;
+}
+
+span.navbar-toggler-icon {
+  border: none;
+}
+
+/* footer image SVG is resized to 20px width */
+.foot {
+  width: 20px;
+}
+
+/* universal centering tag */
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/* spinner animation and keyframes taken from codepen.io used for navbar home icon/logo */
+
+#spinner {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}

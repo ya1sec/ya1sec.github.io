@@ -1,7 +1,7 @@
 body {
   perspective: 1300px;
-  height: 80vh;
-  max-height: 80vh;
+  height: 100vh;
+  max-height: 100vh;
   /* background-image: url(img/plaid.jpg);
   background-size: 100px auto; */
   font-family: "Inferi";
