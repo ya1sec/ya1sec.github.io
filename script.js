@@ -39,26 +39,34 @@ document.addEventListener("mousemove", function (event) {
 //     .bind("touchend", function () {});
 // };
 
-$("nav").mouseenter(function () {
+// $("nav").mouseenter(function () {
+//   $("#cube").addClass("hide");
+// });
+
+// $("nav").mouseleave(function () {
+//   $("#cube").removeClass("hide");
+// });
+
+// $("p").mouseenter(function () {
+//   $("#cube").addClass("hide");
+// });
+
+// $("p").mouseleave(function () {
+//   $("#cube").removeClass("hide");
+// });
+
+// $("a").mouseenter(function () {
+//   $("#cube").addClass("hide");
+// });
+
+// $("a").mouseleave(function () {
+//   $("#cube").removeClass("hide");
+// });
+
+$(".cube-hide").mouseenter(function () {
   $("#cube").addClass("hide");
 });
 
-$("nav").mouseleave(function () {
-  $("#cube").removeClass("hide");
-});
-
-$("p").mouseenter(function () {
-  $("#cube").addClass("hide");
-});
-
-$("p").mouseleave(function () {
-  $("#cube").removeClass("hide");
-});
-
-$("a").mouseenter(function () {
-  $("#cube").addClass("hide");
-});
-
-$("a").mouseleave(function () {
+$(".cube-hide").mouseleave(function () {
   $("#cube").removeClass("hide");
 });
