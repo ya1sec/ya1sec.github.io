@@ -105,45 +105,45 @@ a:hover {
 }
 
 .face-cover {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-image: url(gif/kimshui.gif);
-  transform: translateX(-50%) translateY(-50%) translateZ(150px);
+  transform: translateX(-50%) translateY(-50%) translateZ(100px);
 }
 
 .face-side {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-image: url(gif/nakedsculptures_1.gif);
-  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(150px);
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(100px);
 }
 
 .face-spine {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-image: url(gif/fromback.gif);
-  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(150px);
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(100px);
 }
 
 .face-top {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-image: url(gif/cirque.gif);
-  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(150px);
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(100px);
 }
 
 .face-bottom {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-image: url(gif/wonhundred1.gif);
-  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(150px);
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(100px);
 }
 
 .face-back {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-image: url(gif/themepark.gif);
-  transform: translateX(-50%) translateY(-50%) rotateX(180deg) translateZ(150px);
+  transform: translateX(-50%) translateY(-50%) rotateX(180deg) translateZ(100px);
 }
 
 #bottom-footer {
