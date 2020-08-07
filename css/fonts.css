@@ -124,14 +124,14 @@
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("../fonts/fonts/JetBrainsMono-Regular.woff2") format(woff2),
-    url("../fonts/fonts/JetBrainsMono-Regular.woff") format(woff);
+  src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2"),
+    url("../fonts/JetBrainsMono-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "NeueHaasGroteskDisp Pro Lt";
-  src: url("../fonts/fonts/NHaasGroteskDSPro-45Lt.woff2") format("woff2"),
-    url("../fonts/fonts/NHaasGroteskDSPro-45Lt.woff") format("woff");
+  src: url("../fonts/NHaasGroteskDSPro-45Lt.woff2") format("woff2"),
+    url("../fonts/NHaasGroteskDSPro-45Lt.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -139,8 +139,8 @@
 
 @font-face {
   font-family: "NeueHaasGroteskDisp Pro Md";
-  src: url("../fonts/fonts/NHaasGroteskDSPro-65Md.woff2") format("woff2"),
-    url("../fonts/fonts/NHaasGroteskDSPro-65Md.woff") format("woff");
+  src: url("../fonts/NHaasGroteskDSPro-65Md.woff2") format("woff2"),
+    url("../fonts/NHaasGroteskDSPro-65Md.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -148,8 +148,40 @@
 
 @font-face {
   font-family: "soyuz_groteskbold";
-  src: url("../fonts/fonts/soyuzgroteskbold-webfont.woff2") format("woff2"),
-    url("../fonts/fonts/soyuzgroteskbold-webfont.woff") format("woff");
+  src: url("../fonts/soyuzgroteskbold-webfont.woff2") format("woff2"),
+    url("../fonts/soyuzgroteskbold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "orobanmasuria";
+  src: url("../fonts/oroban-masuria-webfont.woff2") format("woff2"),
+    url("../fonts/oroban-masuria-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "orobanmasuria_italic";
+  src: url("../fonts/oroban-masuriaitalic-webfont.woff2") format("woff2"),
+    url("../fonts/oroban-masuriaitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "orobanhermonthica";
+  src: url("../fonts/oroban-hermonthica-webfont.woff2") format("woff2"),
+    url("../fonts/oroban-hermonthica-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "orobanhermonthica_italic";
+  src: url("../fonts/oroban-hermonthicaitalic-webfont.woff2") format("woff2"),
+    url("../fonts/oroban-hermonthicaitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

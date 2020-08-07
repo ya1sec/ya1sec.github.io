@@ -1,0 +1,45 @@
+.inferi {
+  font-family: "Inferi";
+  font-size: 1em;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.inferi-italic {
+  font-family: "Inferi";
+  font-size: 1em;
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+.masuria-title {
+  font-family: "orobanmasuria";
+  font-size: 2em;
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+.masuria-pos {
+  font-family: "orobanmasuria";
+  font-size: 1em;
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+.hermonthica {
+  font-family: "Inferi";
+  font-size: 3em;
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+.nhg {
+  font-family: "NeueHaasGroteskDisp Pro Md";
+  font-size: 1.5em;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
