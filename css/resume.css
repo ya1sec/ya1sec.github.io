@@ -5,19 +5,37 @@
   font-style: normal;
   font-display: swap;
 }
+
+.inferi-small {
+  font-family: "Inferi";
+  font-size: 0.8em;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 .inferi-italic {
+  font-family: "Inferi";
+  font-size: 0.8em;
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+.inferi-desc {
   font-family: "Inferi";
   font-size: 1em;
   font-weight: 300;
   font-style: italic;
   font-display: swap;
+  color: rgb(160, 75, 0);
 }
 
 .masuria-title {
   font-family: "orobanmasuria";
   font-size: 2em;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 .masuria-pos {
@@ -28,11 +46,19 @@
   font-display: swap;
 }
 
-.hermonthica {
-  font-family: "Inferi";
+.hermonthica-title {
+  font-family: "orobanhermonthica";
   font-size: 3em;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
+  font-display: swap;
+}
+
+.hermonthica-pos {
+  font-family: "orobanhermonthica";
+  font-size: 0.5em;
+  font-weight: 300;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -42,4 +68,28 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+.heading {
+  padding-top: 20px;
+  line-height: 0px;
+}
+
+.job {
+  line-height: 0;
+}
+
+.exp-container {
+  max-width: 80%;
+  max-height: auto;
+  position: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  width: auto;
+  padding-left: 15px;
+}
+
+.exp-block {
+  padding-top: 3px;
 }
