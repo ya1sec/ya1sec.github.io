@@ -14,14 +14,6 @@ body {
 }
 
 footer {
-  display: flex;
-  position: absolute;
-  padding: 20px;
-  left: 0;
-  bottom: 0 !important;
-  height: 80px;
-  width: 100%;
-  overflow: hidden;
 }
 
 h1 {

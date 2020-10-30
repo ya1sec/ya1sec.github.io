@@ -1,0 +1,586 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: goldenrod;
+}
+
+canvas {
+  box-sizing: content-box;
+  text-align: center;
+  position: static;
+  margin-left: -25%;
+  margin-top: -30%;
+  margin-bottom: -25%;
+  position: relative;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* body {
+  background-color: #d3d3d3;
+  color: #000;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.36;
+  text-rendering: optimizeLegibility;
+  margin: 100px;
+  padding: 0;
+  text-align: center;
+} */
+
+#world {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  /* text-decoration: underline; */
+}
+a:active {
+  color: red;
+}
+a:visited {
+  color: #000;
+}
+
+#content p a {
+  text-decoration: underline;
+}
+
+#content p a.button,
+#content td a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  padding-left: 1em;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 22px;
+}
+
+h1 a:hover {
+  border-bottom: 0;
+}
+
+.label {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 0.5em;
+  background: #d5d3d2;
+  border: 1px;
+  border-style: solid;
+  border-color: #e1e1e1 #a1a1a1 #848484 #e1e1e1;
+  padding: 8px 10px;
+  display: inline-block;
+}
+
+#content {
+  /* background-color: #c9c9c9; */
+  color: #9fadad;
+  width: 400px;
+  margin: 100px auto;
+  border: 1px dotted goldenrod;
+  padding: 24px 32px 32px;
+  text-align: left;
+  position: relative;
+}
+
+#lecture,
+#workshop {
+  max-width: 1195px;
+  font-size: 32px;
+  font-family: "Times Dot Regular", serif;
+  line-height: 1.1;
+}
+
+#lecture a {
+}
+
+#lecture p,
+#workshop p {
+  text-align: left;
+}
+
+#workshop {
+  max-width: 700px;
+}
+
+li {
+  margin-bottom: 0.6em;
+}
+
+li img {
+  vertical-align: -3px;
+  margin-right: 0.4em;
+}
+
+.accordion-body {
+  display: none;
+  margin-top: 1em;
+  margin-bottom: 1.6em;
+  padding-left: 24px;
+  opacity: 0;
+}
+
+.accordion-body.opacity-one {
+  opacity: 1;
+}
+
+.accordion-title:hover {
+  cursor: pointer;
+  color: #ff41b4;
+}
+
+hr {
+  border: 0;
+  margin: 1.5em 0;
+  border-bottom: 1px solid #c75e4f;
+}
+
+hr.special {
+  border-bottom: 1px solid #c75e4f;
+}
+
+.slogan {
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+.button-zone {
+  display: block;
+  margin-top: 0.5em;
+}
+
+a.button,
+td a {
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 1px 4px;
+  display: inline-block;
+  margin-bottom: 4px;
+  color: goldenrod;
+}
+
+a.button:hover,
+td a:hover {
+  border: 1px solid rgba(0, 0, 0, 0.88);
+  text-decoration: none;
+}
+
+.special-label {
+  border-radius: 6px;
+  padding: 2px 5px;
+  background: yellow;
+  display: inline-block;
+  margin-bottom: 4px;
+  /*border: 1px solid rgba(255,255,255,0.5);*/
+}
+
+.date a {
+  color: rgba(0, 0, 0, 0.5);
+  /*margin-bottom: 1.3em;*/
+  display: inline-block;
+}
+
+.date a:hover {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 2px;
+  padding-left: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+td p {
+  margin: 0;
+}
+
+tr.future {
+  opacity: 0.4;
+}
+
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: 0.4px;
+  }
+}
+
+/*nav.pagination {
+	display: none;
+}*/
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 550px) {
+  body {
+    margin: 8px;
+  }
+
+  #content {
+    max-width: 100%;
+    width: 400px;
+    margin-top: 0;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation by tillo
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-flicker-out-glow {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+      0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
+      0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  13.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+      0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
+      0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  14% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  14.9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  15% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2),
+      0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  22.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px #ffffff8c, 0 0 60px rgba(255, 255, 255, 0.4),
+      0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  23% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  24.9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  25% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  34.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  35% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  39.9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  40% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  42.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  43% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  44.9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  54.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  69.4% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  69.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  69.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  70% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  79.4% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  79.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  80% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  89.8% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  89.9% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  90% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes text-flicker-out-glow {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+      0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
+      0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  13.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+      0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
+      0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  14% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  14.9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  15% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2),
+      0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  22.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2),
+      0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  23% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  24.9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  25% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  34.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  35% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  39.9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  40% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  42.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+      0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  43% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  44.9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  54.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  69.4% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  69.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  69.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+      0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  70% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  79.4% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  79.9% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  80% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  89.8% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  89.9% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  90% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.text {
+  -webkit-animation: text-flicker-out-glow 2.5s linear infinite both;
+  animation: text-flicker-out-glow 2.5s linear infinite both;
+  margin-top: 7.5%;
+  color: rgb(241, 232, 232);
+  font: 150px/1 "TeXGyreAdventorBold";
+  text-transform: none;
+  text-align: center;
+  font-family: monospace;
+}
+body {
+  background-color: black;
+}
