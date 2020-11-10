@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  color: goldenrod;
-}
-
 canvas {
   box-sizing: content-box;
   text-align: center;
@@ -126,10 +122,11 @@ h1 a:hover {
 
 #content {
   /* background-color: #c9c9c9; */
-  color: #9fadad;
+  color: #000000;
   width: 400px;
   margin: 100px auto;
-  border: 1px dotted rgb(245, 152, 110);
+  /* border: 1px dotted rgb(245, 152, 110); */
+  /* border: 1px dotted rgb(0, 0, 0); */
   padding: 24px 32px 32px;
   text-align: left;
   position: relative;
@@ -184,11 +181,12 @@ li img {
 hr {
   border: 0;
   margin: 1.5em 0;
-  border-bottom: 1px solid #3393ca;
+  /* border-bottom: 1px solid #3393ca; */
+  border-bottom: 1px solid #000000;
 }
 
 hr.special {
-  border-bottom: 1px solid #3393ca;
+  border-bottom: 1px solid #000000;
 }
 
 .slogan {
@@ -205,12 +203,12 @@ h1 a:hover {
 
 a.button,
 td a {
-  border: 1px solid #3393ca;
-  border-radius: 6px;
+  /* border: 1px solid #000000;
+  border-radius: 6px; */
   padding: 1px 4px;
   display: inline-block;
   margin-bottom: 4px;
-  color: goldenrod;
+  color: rgb(218, 32, 32);
 }
 
 a.button:hover,
