@@ -208,12 +208,12 @@ td a {
   padding: 1px 4px;
   display: inline-block;
   margin-bottom: 4px;
-  color: rgb(218, 32, 32);
+  color: #2c93ca;
 }
 
 a.button:hover,
 td a:hover {
-  border: 1px solid rgba(0, 0, 0, 0.88);
+  /* border: 1px solid rgba(0, 0, 0, 0.88); */
   text-decoration: none;
 }
 

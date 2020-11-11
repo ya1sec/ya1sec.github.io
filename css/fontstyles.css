@@ -89,6 +89,13 @@
   font-display: swap;
 }
 
+.hermonthica {
+  font-family: "orobanhermonthica";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 .hermonthica-project-title {
   font-family: "NeueHaasGroteskDisp Pro Md";
   font-size: 5vw;
