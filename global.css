@@ -182,7 +182,7 @@ hr {
   border: 0;
   margin: 1.5em 0;
   /* border-bottom: 1px solid #3393ca; */
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px dotted #000000;
 }
 
 hr.special {
