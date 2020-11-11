@@ -1,11 +1,14 @@
 {
   "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "..\\..\\webtesting"
-	}
-],
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\..\\webtesting"
+    },
+    {
+      "path": "..\\nlp"
+    }
+  ],
   "settings": {}
 }

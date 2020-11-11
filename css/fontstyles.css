@@ -34,11 +34,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  font-size: 5em;
-  -webkit-text-stroke-width: 1px;
-  color: #000000;
-  -webkit-text-stroke-color: #000000;
-  position: fixed;
+  font-size: 4em;
 }
 
 .inferi-small {
