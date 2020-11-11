@@ -175,7 +175,7 @@ li img {
 
 .accordion-title:hover {
   cursor: pointer;
-  color: #ff41b4;
+  color: #a30101;
 }
 
 hr {
@@ -254,6 +254,32 @@ td p {
 
 tr.future {
   opacity: 0.4;
+}
+
+#videoDiv {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.sphr {
+  width: 1.2em;
+  height: 1.2em;
+  /* margin: auto; */
+  border-radius: 50%;
+  box-shadow: 0 0 10px #eeeeee, -10px 0 40px #ffffff, 10px 0 40px #ffffff,
+    inset 0 0 50px #eeeeee (26, 25, 25), inset 50px 0 40px #ffffff,
+    inset -50px 0 40px #0ff, inset 50px 0 300px #ffffff,
+    inset -50px 0 300px #00ffff;
+  animation: pulsate 6s linear infinite;
+}
+
+@keyframes pulsate {
+  50% {
+    box-shadow: 0 0 10px #eeeeee, 10px 0 40px #ffffff, -10px 0 40px #0ff,
+      inset 0 0 50px #eeeeee, inset -50px 0 40px #ffffff, inset 50px 0 40px #0ff,
+      inset -50px 0 300px #ffffff, inset 50px 0 300px #0ff;
+  }
 }
 
 @media (min-width: 500px) {
