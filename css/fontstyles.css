@@ -53,6 +53,14 @@
   font-display: swap;
 }
 
+.inferi-copyright {
+  font-family: "Inferi";
+  font-size: 0.6em;
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
 .inferi-desc {
   font-family: "Inferi";
   font-size: 1em;
