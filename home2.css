@@ -12,6 +12,15 @@ body {
   color: black;
 }
 
+.content-box {
+}
+
+.image {
+  filter: blur(1em);
+  /* position: fixed; */
+  width: auto;
+}
+
 section {
   position: absolute;
   top: 50%;
