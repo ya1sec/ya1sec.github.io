@@ -1,0 +1,70 @@
+butterfly {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: block;
+  transform: translate(-100px, -100px);
+  pointer-events: none;
+}
+butterfly [data-hidden="true"] {
+  opacity: 0;
+}
+wing {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+wing[data-side="left"] {
+  transform-origin: center right;
+  animation-name: flap-left;
+  left: 0;
+}
+wing[data-side="right"] {
+  transform-origin: center left;
+  animation-name: flap-right;
+  right: 0;
+  transform: scaleX(-1);
+}
+.wind {
+  margin-bottom: 0;
+}
+@keyframes flap-left {
+  0% {
+    transform: rotateY(0deg);
+  }
+  30% {
+    transform: rotateY(-60deg);
+  }
+  60% {
+    transform: rotateY(60deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes flap-right {
+  0% {
+    transform: rotateY(0deg);
+  }
+  30% {
+    transform: rotateY(60deg);
+  }
+  60% {
+    transform: rotateY(-60deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+.round {
+  border-radius: 1em;
+  overflow: hidden;
+}
