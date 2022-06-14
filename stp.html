@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<script>
+		function request_channel(channel) {
+			let url = `https://api.are.na/v2/channels/${channel}?per=5000`
+			return fetch(url, { method: 'GET', redirect: 'follow' })
+				.then(response => response.json())
+				.then(data => {
+					return data;
+				})
+				.catch(error => console.log('error', error));
+		}
+
+		// request channel async
+		async function get_channel_contents() {
+			let channels = [`bookmarks-1ntdk32bur0?page=${Math.floor(Math.random() * 6) + 1}`, 'links-to-the-cultural-revolution'];
+			let channel = channels[Math.floor(Math.random() * channels.length)];
+			let data = await request_channel(channel);
+			console.log(data);
+			return data;
+		}
+
+		// get channel contents. if length of data.contents is 0, get another channel
+		async function get_channel_contents_loop() {
+			let data = await get_channel_contents();
+			if (data.contents.length == 0) {
+				console.log('no contents');
+				get_channel_contents_loop();
+			} else {
+				console.log(data.contents.length);
+				let contents = data.contents;
+				let random_item = contents[Math.floor(Math.random() * contents.length)];
+
+				if ("source" in random_item) {
+					let source = random_item.source;
+					if ("url" in source) {
+						let source_url = source.url;
+						console.log(source_url);
+						// NOTE: Redirect to source_url
+						window.location.href = source_url;
+					} else {
+						window.location.reload()
+					}
+				} else {
+					window.location.reload()
+				}
+			}
+		}
+
+		// run this shit
+		get_channel_contents_loop().then(data => {
+			console.log(data);
+		});
+
+	</script>
+</body>
+
+</html>
